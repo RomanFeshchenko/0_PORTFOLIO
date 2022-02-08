@@ -1,0 +1,208 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    max-width: 1940px;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER--------------------------------------------------------------------------------*/
+.header{
+    width: 100%;
+    position: fixed;
+    background: rgba(238, 239, 241, 0.8) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header h1{   
+    color: #34547A;
+    font-family: 'Revalia', cursive;
+    font-style: normal;
+    font-weight: normal;
+    margin: 10px;
+    font-size: 48px;
+    line-height: 60px;
+}
+.header_list{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.list_botton{
+    margin: 0 10px 0 10px;
+}
+.list_botton_link{
+    text-decoration: none;
+    font-style: normal;
+    color: #34547A;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+
+}
+.list_botton_link:hover{
+    text-decoration: underline 2px;
+}
+
+/*MAIN--------------------------------------------------------------------------------*/
+
+/*Section_1--------------------------------------------------------------------------------*/
+.section_1{
+    background: #EEEFF1;
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(12,[col] 1fr) / repeat(12,[row] 1fr); 
+    align-items: center;
+}
+.section_1_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    grid-column: 3/6;
+    grid-row: 4/10;
+ 
+    border-radius: 25%;
+    -webkit-box-shadow: 5px 5px 40px 5px rgba(34, 60, 80, 0.6);
+    -moz-box-shadow: 5px 5px 40px 5px rgba(34, 60, 80, 0.6);
+    box-shadow: 5px 5px 40px 5px rgba(90, 91, 92, 0.6);
+}
+.section_1_info{
+    grid-column: 7/11;
+    grid-row: 3/11;
+    text-align: left;
+    display: grid;
+    grid-gap: 30px;
+
+}
+.section_1_info h1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+    margin: 0;
+}
+.section_1_info p{
+    color: #727272;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+}
+.section_1_info button{
+    border: none;
+    color: #EEEFF1;
+    background: #34547A;
+    width: 225px;
+    height: 65px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 0;
+    margin: 0;
+}
+
+/*Section_2--------------------------------------------------------------------------------*/
+.section_2{
+    margin: 0;
+    background-color: white;
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(12,[col] 1fr) / repeat(12,[row] 1fr); 
+    align-items: center;
+}
+.section_2 h2{
+    grid-column: 5/9;
+    grid-row: 2/6;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+
+}
+.section_2 p{
+    grid-column: 3/11;
+    grid-row: 3/12;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    justify-content: center;
+    color: #727272;
+    margin: 0;
+}
+
+/*Section_3--------------------------------------------------------------------------------*/
+
+.section_3{    
+    background: #EEEFF1;
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(12,[col] 1fr) / repeat(12,[row] 1fr); 
+    align-items: center;
+}
+.section_3_list_1, .section_3_list_2{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    grid-column: 3/6;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+}
+.section_3_list_1{
+    grid-row: 3/6;
+}
+.section_3_list_2{
+    grid-row: 7/12;
+}
+.section_3_list_item{
+    margin: 10px 0 10px 0;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+
+    border-bottom:2px solid #34547A;
+    padding:2px;
+    margin:2px;
+}
+.section_3_photos{
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    grid-column: 7/13;
+    grid-row: 1/13;
+
+    display: grid;
+    grid-template: repeat(4,[col] 1fr) / repeat(3,[row] 1fr); 
+}
+.section_3_photo{
+    margin: 0;
+   height: 100%;
+   width: 100%;
+}
+.section_3_photo_img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

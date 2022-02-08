@@ -1,0 +1,127 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    max-width: 1920px;
+    min-width: 500px;
+    background-color: wheat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+
+}
+/*Фиксированая шапка для быстрой навигации*/
+.header{
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    font-size: 20px;
+    height: 10%;
+    max-height: 70px;
+    min-height: 50px;
+    width: 100%;
+    min-width: 500px;
+    background: rgb(150, 150, 150);
+    border-radius: 0 0 10px 10px;
+}
+.header_logo_block{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    color: white;
+}
+.header_links_block{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    
+}
+@media (max-width: 650px) {
+    .header{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);    
+    }
+}
+
+a{  
+    height: 25px;
+    width: 120px;
+    text-decoration: none;
+    padding: 5px;
+    margin: 3px 5px 3px 5px;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    white-space: nowrap;
+    outline: white solid 2px;
+    transition: all 0.5s;
+
+}
+a:hover{
+    color: black;
+    background-color: white;
+    outline: black solid 2px;
+    outline-offset: -4px;
+}
+p{
+    margin: 0;
+    
+}
+.header_back{
+    font-size: 20px;
+    height: 10%;
+    max-height: 70px;
+    min-height: 50px;
+    width: 100%;
+    min-width: 500px;
+}
+
+/*Первая часть страницы, по сути только привецтвие и очень коротнкое описание*/
+.section_1{
+    background-color: rgb(225, 245, 179);
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4,[col] 1fr);  
+    grid-template-rows: repeat(5,[row] 1fr);  
+}
+h1,h3.section_1{
+    margin: 10px;
+}
+.section_1_header_1{
+    grid-column: col 1/ span 4;
+    grid-row: row 2 / span 1;
+}
+.section_1_header_2{
+    grid-column: col 1/ span 4;
+    grid-row: row 3 / span 1;
+}
+.section_1_header_3{
+    grid-column: col 1/ span 4;
+    grid-row: row 4 / span 1;
+}
+
+/*Вторая часть страницы, в которой информация про меня*/
+
+
+
+/*Третья часть страницы, про мои професиональные достижения и опыт*/
+
+
+
+/*Четвертая часть, фотки с жизни, работы, хобби и т.д.*/
+
+
+
+/*Пятая часть, контактная информация, сылки на соц сети и т.д.*/
+
+
+
